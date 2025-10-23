@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(natureza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 40px;
+    display: flex;
+    gap: 150px;
+    background-color: rgba(30, 63, 63, 0.692);
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+}
+
+span {
+    color: red;
+}
+
+#btn-menu {
+    color: black;
+    display: none;
+}
+
+ul {
+    display: flex;
+    margin: 20px;
+    gap: 50px;
+}
+
+li {
+    margin: 15px;
+    list-style-type: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    color: rgb(60, 19, 99);
+    transform: translateY(-3px);
+}
+
+.container {
+    display: flex;
+    padding-top: 100px;
+    gap: 200px;
+}
+
+.conteudo {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.conteudo h1 {
+    font-size: 70px;
+}
+
+.conteudo h2 {
+    font-size: 30px;
+}
+
+.conteudo h3 {
+    font-size: 20px;
+    text-align: justify;
+    font-size: 22px;
+    background-color: rgba(231, 233, 226, 0.671);
+}
+
+.conteudo button {
+    width: 220px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.conteudo button:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 4px black;
+}
+
+.formulario {
+    border: 1px solid black;
+    width: 500px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+input {
+    height: 40px;
+    width: 90%;
+}
+
+.formulario h3 {
+    color: white;
+}
+
+.formulario button {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: orange;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.formulario button:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 4px black;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: block;
+    }
+
+    ul {
+        display: block;
+        text-align: center;
+    }
+
+    #btn-menu {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
+  
